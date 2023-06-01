@@ -1,0 +1,109 @@
+[debug] [2023-04-15T19:51:29.916Z] ----------------------------------------------------------------------
+[debug] [2023-04-15T19:51:29.917Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2023-04-15T19:51:29.918Z] CLI Version:   11.27.0
+[debug] [2023-04-15T19:51:29.918Z] Platform:      linux
+[debug] [2023-04-15T19:51:29.918Z] Node Version:  v18.16.0
+[debug] [2023-04-15T19:51:29.921Z] Time:          Sat Apr 15 2023 16:51:29 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2023-04-15T19:51:29.921Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-15T19:51:29.923Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-04-15T19:51:29.956Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-15T19:51:29.957Z] > authorizing via signed-in user (enricofarina667@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/enricofarina/AndroidStudioProjects/AplicacaoTeste
+
+[debug] [2023-04-15T19:51:30.468Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-04-15T19:51:30.469Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-04-15T19:51:41.476Z] > refreshing access token with scopes: []
+[debug] [2023-04-15T19:51:41.478Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-04-15T19:51:41.478Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-04-15T19:51:41.666Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-04-15T19:51:41.666Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-04-15T19:51:41.676Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-04-15T19:51:42.444Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-04-15T19:51:42.445Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project aplicacaoteste-971aa (AplicacaoTeste) 
+[info] 
+=== Firestore Setup
+[debug] [2023-04-15T19:51:44.970Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/aplicacaoteste-971aa/services/firestore.googleapis.com [none]
+[debug] [2023-04-15T19:51:44.970Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/aplicacaoteste-971aa/services/firestore.googleapis.com x-goog-quota-user=projects/aplicacaoteste-971aa
+[debug] [2023-04-15T19:51:46.335Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/aplicacaoteste-971aa/services/firestore.googleapis.com 200
+[debug] [2023-04-15T19:51:46.336Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/aplicacaoteste-971aa/services/firestore.googleapis.com [omitted]
+[debug] [2023-04-15T19:51:46.336Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/aplicacaoteste-971aa/databases/(default) [none]
+[debug] [2023-04-15T19:51:46.643Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/aplicacaoteste-971aa/databases/(default) 200
+[debug] [2023-04-15T19:51:46.643Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/aplicacaoteste-971aa/databases/(default) {"name":"projects/aplicacaoteste-971aa/databases/(default)","uid":"b9f62a60-c9c3-4fd2-9355-efd39887f55e","createTime":"2023-04-13T23:53:36.154730Z","updateTime":"2023-04-13T23:53:36.154730Z","locationId":"southamerica-east1","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","appEngineIntegrationMode":"DISABLED","keyPrefix":"i","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IN/dr83UrP4CMO2Z8J6HqP4C"}
+[debug] [2023-04-15T19:51:46.644Z] database_type: FIRESTORE_NATIVE
+[debug] [2023-04-15T19:51:46.644Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-15T19:51:46.644Z] > authorizing via signed-in user (enricofarina667@gmail.com)
+[debug] [2023-04-15T19:51:46.645Z] [iam] checking project aplicacaoteste-971aa for permissions ["firebase.projects.get"]
+[debug] [2023-04-15T19:51:46.645Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/aplicacaoteste-971aa:testIamPermissions [none]
+[debug] [2023-04-15T19:51:46.646Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/aplicacaoteste-971aa:testIamPermissions x-goog-quota-user=projects/aplicacaoteste-971aa
+[debug] [2023-04-15T19:51:46.646Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/aplicacaoteste-971aa:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-04-15T19:51:47.774Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/aplicacaoteste-971aa:testIamPermissions 200
+[debug] [2023-04-15T19:51:47.775Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/aplicacaoteste-971aa:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-04-15T19:51:52.487Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/aplicacaoteste-971aa/releases pageSize=10&pageToken=
+[debug] [2023-04-15T19:51:53.708Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/aplicacaoteste-971aa/releases 200
+[debug] [2023-04-15T19:51:53.709Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/aplicacaoteste-971aa/releases {"releases":[{"name":"projects/aplicacaoteste-971aa/releases/cloud.firestore","rulesetName":"projects/aplicacaoteste-971aa/rulesets/3272897e-5bf8-42ef-a52a-c7ab3a554b4a","createTime":"2023-04-13T23:53:40.959509Z","updateTime":"2023-04-13T23:54:08.885814Z"},{"name":"projects/aplicacaoteste-971aa/releases/firebase.storage/aplicacaoteste-971aa.appspot.com","rulesetName":"projects/aplicacaoteste-971aa/rulesets/884ee5ee-7cb5-40aa-8533-ac7dfc31f078","createTime":"2023-04-14T00:36:49.583830Z","updateTime":"2023-04-14T00:37:26.336129Z"}]}
+[debug] [2023-04-15T19:51:53.709Z] Found ruleset: projects/aplicacaoteste-971aa/rulesets/3272897e-5bf8-42ef-a52a-c7ab3a554b4a
+[debug] [2023-04-15T19:51:53.710Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/aplicacaoteste-971aa/rulesets/3272897e-5bf8-42ef-a52a-c7ab3a554b4a [none]
+[debug] [2023-04-15T19:51:54.730Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/aplicacaoteste-971aa/rulesets/3272897e-5bf8-42ef-a52a-c7ab3a554b4a 200
+[debug] [2023-04-15T19:51:54.731Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/aplicacaoteste-971aa/rulesets/3272897e-5bf8-42ef-a52a-c7ab3a554b4a [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-04-15T19:52:41.086Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/aplicacaoteste-971aa/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2023-04-15T19:52:41.090Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/aplicacaoteste-971aa/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2023-04-15T19:52:41.210Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/aplicacaoteste-971aa/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2023-04-15T19:52:41.211Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/aplicacaoteste-971aa/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/aplicacaoteste-971aa/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[debug] [2023-04-15T19:52:41.225Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/aplicacaoteste-971aa/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2023-04-15T19:52:41.226Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/aplicacaoteste-971aa/databases/(default)/collectionGroups/-/indexes {}
+[info] 
+=== Functions Setup
+[debug] [2023-04-15T19:52:41.228Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-15T19:52:41.228Z] > authorizing via signed-in user (enricofarina667@gmail.com)
+[debug] [2023-04-15T19:52:41.228Z] [iam] checking project aplicacaoteste-971aa for permissions ["firebase.projects.get"]
+[debug] [2023-04-15T19:52:41.229Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/aplicacaoteste-971aa:testIamPermissions [none]
+[debug] [2023-04-15T19:52:41.229Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/aplicacaoteste-971aa:testIamPermissions x-goog-quota-user=projects/aplicacaoteste-971aa
+[debug] [2023-04-15T19:52:41.229Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/aplicacaoteste-971aa:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-04-15T19:52:42.248Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/aplicacaoteste-971aa:testIamPermissions 200
+[debug] [2023-04-15T19:52:42.248Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/aplicacaoteste-971aa:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-04-15T19:52:42.249Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/aplicacaoteste-971aa/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-04-15T19:52:42.249Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/aplicacaoteste-971aa/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/aplicacaoteste-971aa
+[debug] [2023-04-15T19:52:42.254Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/aplicacaoteste-971aa/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-04-15T19:52:42.254Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/aplicacaoteste-971aa/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/aplicacaoteste-971aa
+[debug] [2023-04-15T19:52:43.272Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/aplicacaoteste-971aa/services/cloudfunctions.googleapis.com 200
+[debug] [2023-04-15T19:52:43.273Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/aplicacaoteste-971aa/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2023-04-15T19:52:43.280Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/aplicacaoteste-971aa/services/runtimeconfig.googleapis.com 200
+[debug] [2023-04-15T19:52:43.280Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/aplicacaoteste-971aa/services/runtimeconfig.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
