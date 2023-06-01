@@ -1,9 +1,10 @@
 package com.example.aplicacaoteste
 
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.LayoutInflater
 import android.widget.Toast
 import androidx.camera.core.CameraSelector
 import androidx.camera.core.ImageCapture
@@ -46,7 +47,9 @@ class Tela2Activity : AppCompatActivity() {
 
         //botão para takephoto
         binding.takephoto.setOnClickListener {
-            takePhoto()
+            takePhoto() //tirar a foto
+            blinkPreview()
+
         }
     }
 
@@ -102,5 +105,15 @@ class Tela2Activity : AppCompatActivity() {
 
             )
         }
+    }
+
+    //Irá piscar o preview(Usuário entender que a foto foi tirada)
+    private fun blinkPreview(){
+        binding.root.postDelayed({
+            binding.root.foreground = ColorDrawable(Color.WHITE)
+            binding.root.postDelayed({
+                binding.root.foreground = null
+            }, 50)
+        }, 100)
     }
 }
